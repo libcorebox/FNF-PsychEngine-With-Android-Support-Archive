@@ -34,7 +34,7 @@ class SUtil
 		if (!Permissions.getGrantedPermissions().contains(PermissionsList.WRITE_EXTERNAL_STORAGE)
 			&& !Permissions.getGrantedPermissions().contains(PermissionsList.READ_EXTERNAL_STORAGE))
 		{
-			if (VERSION.SDK_INT > 23 || VERSION.SDK_INT == 23)
+			if (VERSION.SDK_INT > 19 || VERSION.SDK_INT == 23)
 			{
 				Permissions.requestPermissions([PermissionsList.WRITE_EXTERNAL_STORAGE, PermissionsList.READ_EXTERNAL_STORAGE]);
 
